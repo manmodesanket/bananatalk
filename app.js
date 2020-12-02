@@ -2,8 +2,10 @@ console.log("hello");
 
 var btnTranslate = document.querySelector("#btn-translate");
 
-var textArea = document.querySelector("#txt-input");
+var textInput = document.querySelector("#txt-input");
+
+var textOutput = document.querySelector("#txt-output");
 
 btnTranslate.addEventListener("click", () => {
-    console.log(textArea.value);
+    textOutput.value = textInput.value; 
 })
